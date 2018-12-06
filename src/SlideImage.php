@@ -175,12 +175,6 @@ class SlideImage extends DataObject implements PermissionProvider
             );
         }
 
-        if (!$this->ImageID) {
-            $result->addError(
-                _t(__CLASS__ . '.IMAGE_REQUIRED', 'An Image is required before you can save')
-            );
-        }
-
         return $result;
     }
 
